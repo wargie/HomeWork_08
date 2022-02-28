@@ -1,18 +1,19 @@
-﻿// 57. Написать программу, упорядочивания по убыванию элементы каждой строки двумерного массива.
+﻿// Задача 57: Написать программу, которая упорядочивает по убыванию элементы каждой строки двумерной массива.
 
-Console.Clear();
+int row = 4, col = 7,  min = 10,  max = 100;
+
 int[,] GetMatrix(int row, int col, int min, int max)
-{
-    int[,] matrix = new int[row, col];
-    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix[i, j] = new Random().Next(min, max);
-        }
+        int[,] matrix = new int[row, col];
+            for (int i = 0; i < matrix.GetLength(0); i++)
+                {
+                    for (int j = 0; j < matrix.GetLength(1); j++)
+                        {
+                            matrix[i, j] = new Random().Next(min, max);
+                        }
+                }
+            return matrix;
     }
-    return matrix;
-}
 
 int[,] SortRowAscending(int[,] array)
 {
@@ -40,16 +41,13 @@ void PrintTable(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            System.Console.Write(matrix[i, j] + "  ");
+            Console.Write(matrix[i, j] + "  ");
         }
-        System.Console.WriteLine();
+        Console.WriteLine();
     }
 }
 
-int row = 4;
-int col = 7;
-int min = 10;
-int max = 100;
+
 
 int[,] table = GetMatrix(row, col, min, max);
 PrintTable(table);
