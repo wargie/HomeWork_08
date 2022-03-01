@@ -31,14 +31,14 @@ void PrintArray2D(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (j == array.GetLength(1) - 1) Console.Write($" {array[i, j]}  ");
-            else Console.Write($"{array[i, j]}  ");
+            if (j == array.GetLength(1) - 1) Console.Write($"{array[i, j]} ");
+            else Console.Write($"{array[i, j]} ");
         }
         Console.WriteLine();
     }
     Console.WriteLine();
 }
 
-int[,] array = new int[10, 10];
+int[,] array = new int[3, 3];
 FillArray2D(array);
 PrintArray2D(array);
