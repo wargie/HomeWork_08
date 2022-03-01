@@ -11,7 +11,7 @@ int[,] GetMatrix(int row, int col)
                 {
                     for (int j = 0; j < arr.GetLength(1); j++)
                         {
-                            arr[i, j] =  random.Next(1, 15);
+                            arr[i, j] =  random.Next(1, 100);
                         }
                 }
             return arr;
