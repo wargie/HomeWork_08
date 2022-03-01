@@ -1,10 +1,9 @@
 ﻿//Задача 65: Спирально заполнить двумерный массив
 
-int[,] array = new int[5, 5];
+int[,] array = new int[10, 10];
 
-void FillArray2D(int[,] array, int minNumber = 0, int maxNumber = 9)
+void FillArray2D(int[,] array)
 {
-    //Random rnd = new Random();
     int numberRectangle = 0, M = array.GetLength(0), N = array.GetLength(1), i = 0, j = 0, number = 1;
 
     while (number <= M * N)
@@ -34,7 +33,7 @@ void PrintArray2D(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (j == array.GetLength(1) - 1) Console.Write($"{array[i, j]}  ");
+            if (j == array.GetLength(1) - 1) Console.Write($" {array[i, j]}  ");
             else Console.Write($"{array[i, j]}  ");
         }
         Console.WriteLine();
