@@ -28,7 +28,7 @@ void PrintArray3D(int[,,] array)
         {
             for (int k = 0; k < array.GetLength(2); k++)
             {
-                Console.WriteLine($"Элеменe с индексом [{i}-{j}-{k}] соответствует значение {array[i, j, k]} ");
+                Console.WriteLine($"Элементу с индексом [{i}-{j}-{k}] соответствует значение {array[i, j, k]} ");
 
             }
             Console.WriteLine();
