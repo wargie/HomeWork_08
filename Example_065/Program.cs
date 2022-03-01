@@ -1,7 +1,5 @@
 ﻿//Задача 65: Спирально заполнить двумерный массив
 
-int[,] array = new int[10, 10];
-
 void FillArray2D(int[,] array)
 {
     int numberRectangle = 0, M = array.GetLength(0), N = array.GetLength(1), i = 0, j = 0, number = 1;
@@ -15,11 +13,11 @@ void FillArray2D(int[,] array)
         else if (i == M - numberRectangle - 1 && j > numberRectangle) j--;
         else i--;
 
-        if (i == numberRectangle + 1 && j == numberRectangle && numberRectangle != N - numberRectangle - 1) 
-        
+        if (i == numberRectangle + 1 && j == numberRectangle && numberRectangle != N - numberRectangle - 1)
+
         {
             numberRectangle++;
-        }   
+        }
         number++;
 
     }
@@ -41,6 +39,6 @@ void PrintArray2D(int[,] array)
     Console.WriteLine();
 }
 
-
+int[,] array = new int[10, 10];
 FillArray2D(array);
 PrintArray2D(array);
