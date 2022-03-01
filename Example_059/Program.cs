@@ -35,6 +35,7 @@ void PrintMarix(int[,] array)
 int[] SumInRow(int[,] array)
 {
     int[] result = new int[array.GetLength(0)];
+
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(0); j++)
@@ -48,6 +49,7 @@ int[] SumInRow(int[,] array)
 void MinSumInRowResult(int[] array)
 {
     int min = 0;
+    
     for (int i = 1; i < array.Length; i++)
     {
         if (array[i] < array[min]) min = i;
